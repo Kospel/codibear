@@ -1,0 +1,14 @@
+.sys-menu-header {
+  $bottom-padding: 5px;
+
+  background: $gray-dark-3;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  height: calc(100% - #{$bottom-padding});
+  text-align: start;
+  padding-top: $bottom-padding;
+  transform: rotate(-180deg);
+  font-weight: 900;
+  color: $main-gray;
+  font-size: 26px;
+}

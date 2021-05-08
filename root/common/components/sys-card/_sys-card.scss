@@ -1,0 +1,12 @@
+@import './components/sys-card-header-bar/sys-card-header-bar';
+
+.sys-card {
+  @include standardBorders;
+
+  position: absolute;
+  background: $main-gray;
+  width: 600px;
+  height: 400px;
+  top: 50px;
+  left: 30px;
+}

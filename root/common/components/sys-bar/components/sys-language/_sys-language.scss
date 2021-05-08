@@ -1,0 +1,9 @@
+.sys-language {
+  @include sys-bar-sizing;
+
+  line-height: 23px;
+  background: $main-blue;
+  color: $white;
+  margin-right: 5px;
+  padding: 0 3px;
+}

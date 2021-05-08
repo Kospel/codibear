@@ -1,0 +1,12 @@
+.sys-card-folder-body-container {
+  width: calc(100% - 4px);
+  height: calc(100% - 77px);
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background: $white;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 2px $gray-dark-5;
+  border-bottom: 1px solid $gray-dark-2;
+  border-right: 1px solid $gray-dark-2;
+}

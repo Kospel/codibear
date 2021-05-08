@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Obszar_kompozycji_1" data-name="Obszar kompozycji 1">
+    <path id="Linia_1" data-name="Linia 1" class="cls-1" d="M1,24L24,1Zm9,0L24,10Zm9,0,5-5Z"/>
+  </g>
+</svg>
