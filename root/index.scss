@@ -1,5 +1,9 @@
-@import 'styles/sizes';
+@import 'styles/reset';
 @import 'styles/colors';
 @import 'styles/mixins';
-@import 'styles/base';
-@import 'common/components/components';
+@import 'styles/common-heights';
+@import 'components/components';
+@import 'app/desktop/desktop';
+@import 'app/sys-bar/sys-bar';
+@import 'app/sys-card/sys-card';
+@import 'app/sys-card-folder/sys-card-folder';

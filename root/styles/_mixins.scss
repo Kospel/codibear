@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-@mixin standardBorders {
+@mixin standard-border {
   border: 2px solid;
-  border-top-color: $white;
-  border-left-color: $white;
+  border-top-color: $primary-white;
+  border-left-color: $primary-white;
   border-bottom-color: $gray-dark-2;
   border-right-color: $gray-dark-2;
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px $primary-black;
 }
