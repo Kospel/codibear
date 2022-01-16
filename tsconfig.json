@@ -10,8 +10,8 @@
     "allowJs": true,
     "baseUrl": "./",
     "paths": {
-      "routing/*": ["root/routing/*"],
-      "pages/*": ["root/pages/*"]
+      "components/*": ["root/components/*"],
+      "app/*": ["root/app/*"]
     }
   }
 }

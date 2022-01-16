@@ -1,11 +1,10 @@
-import { render } from 'react-dom';
 import React from 'react';
+import { render } from 'react-dom';
 
-import AppRouter from 'routing/router';
+import App from 'app/index';
 
 import './index.scss';
 
-const root = document.getElementById('root');
-const renderApp = () => render(<AppRouter />, root);
+const renderApp = () => render(<App />, document.getElementById('root'));
 
 renderApp();

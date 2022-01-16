@@ -1,0 +1,13 @@
+.sys-clock {
+  @include sys-bar-sizing;
+
+  display: inline-block;
+  border: 2px solid;
+  border-bottom-color: $primary-white;
+  border-right-color: $primary-white;
+  border-top-color: $gray-dark-4;
+  border-left-color: $gray-dark-4;
+  margin-right: 2px;
+  background: $gray-dark-1;
+  padding: 0 10px;
+}
