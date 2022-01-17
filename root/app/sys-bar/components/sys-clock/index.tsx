@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import React, { PureComponent } from 'react';
+import { PureComponent } from 'react';
 
 import { Box } from 'components/index';
 

@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import { ICONS } from 'components/icon';

@@ -1,7 +1,7 @@
 {
   "name": "codibear",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Codibear OS",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",

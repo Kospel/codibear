@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 import SysCard from 'app/sys-card';
 import { ICONS } from 'components/icon';

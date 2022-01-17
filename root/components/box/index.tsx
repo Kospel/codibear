@@ -1,4 +1,4 @@
-import React, { memo, ReactNode, CSSProperties } from 'react';
+import { memo, ReactNode, CSSProperties } from 'react';
 
 interface Props extends CSSProperties {
   children?: ReactNode;

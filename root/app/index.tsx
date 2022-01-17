@@ -1,5 +1,5 @@
 import { hot } from 'react-hot-loader/root';
-import React, { PureComponent, MouseEvent } from 'react';
+import { PureComponent, MouseEvent } from 'react';
 
 import { Box } from 'components/index';
 

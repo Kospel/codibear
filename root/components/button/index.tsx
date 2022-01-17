@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { memo, ReactNode } from 'react';
+import { memo, ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
