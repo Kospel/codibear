@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlgin = require('html-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -53,9 +53,11 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'root/'),
+    static: {
+      directory: path.join(__dirname, 'root/'),
+    },
     port: 3000,
-    hotOnly: true,
+    hot: true,
     historyApiFallback: true,
   },
   plugins: [
@@ -65,7 +67,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFileName: '[id].css',
+      chunkFilename: '[id].css',
     }),
   ],
 };
