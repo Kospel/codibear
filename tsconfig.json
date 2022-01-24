@@ -11,7 +11,9 @@
     "baseUrl": "./",
     "paths": {
       "components/*": ["root/components/*"],
-      "app/*": ["root/app/*"]
+      "styles/*": ["root/syles/*"],
+      "app/*": ["root/app/*"],
+      "utils/*": ["root/utils/*"]
     }
   }
 }

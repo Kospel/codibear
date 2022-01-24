@@ -1,29 +1,35 @@
+import { PureComponent } from 'react';
 import { hot } from 'react-hot-loader/root';
-import { PureComponent, MouseEvent } from 'react';
+import injectSheet, { ThemeProvider } from 'react-jss';
 
 import { Box } from 'components/index';
+import { theme } from '../styles/theming';
+import { styles } from '../styles/overwriter';
+import WindowFolder from 'components/complex/window-folder';
 
-import SysBar from './sys-bar';
 import Desktop from './desktop';
-import SysCardFolder from './sys-card-folder';
+import DesktopBar from './desktop-bar';
 
 class App extends PureComponent {
-  private handleOnClick = (event: MouseEvent) => {
-    const target = (event.target as Element).className;
-
-    console.log(target);
-  };
-
   public render() {
     return (
-      <Box className="app" onClick={this.handleOnClick}>
-        <Desktop>
-          <SysCardFolder folderTitle="Mój folder" />
-        </Desktop>
-        <SysBar />
-      </Box>
+      <ThemeProvider theme={theme}>
+        <Box className="app">
+          <Desktop>
+            <WindowFolder
+              folderTitle="Mój folder"
+              width="600px"
+              height="400px"
+              top="30px"
+              left="60px"
+              isWindowActive={true}
+            />
+          </Desktop>
+          <DesktopBar />
+        </Box>
+      </ThemeProvider>
     );
   }
 }
 
-export default hot(App);
+export default hot(injectSheet(styles)(App));

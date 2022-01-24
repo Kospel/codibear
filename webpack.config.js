@@ -44,6 +44,7 @@ module.exports = {
       styles: path.resolve(__dirname, 'root/styles'),
       components: path.resolve(__dirname, 'root/components'),
       app: path.resolve(__dirname, 'root/app'),
+      utils: path.resolve(__dirname, 'root/utils')
     },
     extensions: ['.tsx', '.ts', '.js', '.scss'],
   },
