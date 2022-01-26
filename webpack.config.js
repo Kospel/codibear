@@ -24,14 +24,6 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules/'),
       },
       {
-        test: /\.scss$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
@@ -46,11 +38,11 @@ module.exports = {
       app: path.resolve(__dirname, 'root/app'),
       utils: path.resolve(__dirname, 'root/utils')
     },
-    extensions: ['.tsx', '.ts', '.js', '.scss'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/',
+    publicPath: './',
     filename: 'bundle.js',
   },
   devServer: {
