@@ -24,14 +24,6 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules/'),
       },
       {
-        test: /\.scss$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
@@ -42,12 +34,12 @@ module.exports = {
     alias: {
       'react-dom': '@hot-loader/react-dom'
     },
-    extensions: ['.tsx', '.ts', '.js', '.scss'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/',
-    filename: 'bundle.js',
+    publicPath: './',
+    filename: '[hash].js',
   },
   devServer: {
     static: {
