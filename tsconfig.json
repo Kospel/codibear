@@ -9,11 +9,5 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "baseUrl": "./",
-    "paths": {
-      "components/*": ["root/components/*"],
-      "styles/*": ["root/syles/*"],
-      "app/*": ["root/app/*"],
-      "utils/*": ["root/utils/*"]
-    }
   }
 }
