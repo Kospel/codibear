@@ -2,10 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlgin = require('html-webpack-plugin');
-
-const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: './src/index.tsx',
@@ -24,14 +21,6 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules/'),
       },
       {
-        test: /\.scss$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
@@ -42,12 +31,13 @@ module.exports = {
     alias: {
       'react-dom': '@hot-loader/react-dom'
     },
-    extensions: ['.tsx', '.ts', '.js', '.scss'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/',
-    filename: 'bundle.js',
+    publicPath: '',
+    filename: '[name].[contenthash].js',
+    clean: true,
   },
   devServer: {
     static: {
@@ -61,10 +51,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlgin({
       template: 'src/index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
     }),
   ],
 };
